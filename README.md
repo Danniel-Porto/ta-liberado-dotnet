@@ -109,4 +109,4 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` p
 
 ---
 
-Feito com ❤️ por [Seu Nome].
+Feito com ❤️.
