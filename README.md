@@ -1,4 +1,4 @@
-# Taliberado - AutoLoginApp
+![TaLiberado drawio (4)](https://github.com/user-attachments/assets/2ba2dcb9-6a95-4fda-b3de-08ae4b61359c)# Taliberado - AutoLoginApp
 
 Taliberado automatiza o processo de login com módulo, senha e código do autenticador.
 
@@ -18,7 +18,7 @@ Ao acessar o sistema, temos duas telas: A tela principal, onde a aplicação sim
 
 O looping de execução em segundo plano verifica se as informações obrigatórias foram fornecidas, do contrário, direciona para a tela de configurações e marca o campo de informação obrigatória. Só é possível salvar e ir para a execução se os campos obrigatórios estiverem preenchidos.
 
-
+![TaLiberado drawio (5)](https://github.com/user-attachments/assets/b3f96d64-cda0-4cd5-a8aa-8eebb27888f9)
 
 # Configurações
 
