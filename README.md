@@ -18,6 +18,8 @@ Ao acessar o sistema, temos duas telas: A tela principal, onde a aplicação sim
 
 O looping de execução em segundo plano verifica se as informações obrigatórias foram fornecidas, do contrário, direciona para a tela de configurações e marca o campo de informação obrigatória. Só é possível salvar e ir para a execução se os campos obrigatórios estiverem preenchidos.
 
+
+
 # Configurações
 
 A tela de configurações permite inserir os dados para a automatização:
