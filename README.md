@@ -1,4 +1,4 @@
-![TaLiberado drawio (4)](https://github.com/user-attachments/assets/2ba2dcb9-6a95-4fda-b3de-08ae4b61359c)# Taliberado - AutoLoginApp
+# Taliberado - AutoLoginApp
 
 Taliberado automatiza o processo de login com módulo, senha e código do autenticador.
 
