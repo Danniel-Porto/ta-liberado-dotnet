@@ -1,107 +1,66 @@
 # Taliberado - AutoLoginApp
 
-**Taliberado** é uma aplicação simples desenvolvida em **C#** para automatizar processos de login em sistemas. A aplicação permite configurar fluxos de login personalizados, salvar dados remotamente e definir atalhos para execução rápida.
+Taliberado automatiza o processo de login com módulo, senha e código do autenticador.
 
-## **Funcionalidades**
+Os dados de cada usuário ficarão salvos em um banco em núvem por segurança.
 
-- Configuração de múltiplos fluxos de login:
-  - Preenchimento automático de campos de login e senha.
-  - Geração automática de códigos OTP (One-Time Password) usando o Autenticador Google.
-- Suporte a atalhos configuráveis (Hotkeys).
-- Interface simples para configurar e gerenciar fluxos de login.
-- Execução em segundo plano com um ícone na bandeja do sistema.
-- Armazenamento seguro de configurações remotamente.
+Opcionalmente, o usuário pode optar por salvar os dados em seu próprio computador utilizando a opção *offline*.
+
+# Fluxo
+
+O sistema inicia na tela de login, para inserir usuário e senha. A autenticação é extremamente simples e serve para permitir o usuário puxar os dados configurados do banco Firebase.
+
+É feito uma consulta ao usuário e a senha é comparada.
+
+É possível criar novo usuário, sem a necessidade de outra tela. Ele utiliza os campos de login para criar o usuário, apenas validando se já não existe.
+
+Ao acessar o sistema, temos duas telas: A tela principal, onde a aplicação simplesmente está sendo executada, e é possível sair da conta ou clicar para acessar a tela de configurações. A tela de configurações é onde o usuário deve inserir a secret do autenticador da google e, opcionalmente, a senha do sistema para a automatização.
+
+O looping de execução em segundo plano verifica se as informações obrigatórias foram fornecidas, do contrário, direciona para a tela de configurações e marca o campo de informação obrigatória. Só é possível salvar e ir para a execução se os campos obrigatórios estiverem preenchidos.
+
+![TaLiberado drawio (5)](https://github.com/user-attachments/assets/b3f96d64-cda0-4cd5-a8aa-8eebb27888f9)
+
+# Configurações
+
+A tela de configurações permite inserir os dados para a automatização:
+
+- Senha do sistema (opcional)
+- Secret do autenticador da google
+
+Opcionalmente, pode haver configurações adicionais para automatização do login em homologação:
+
+- Login homologação
+- Senha homolagação
+- Configuração de qual banco utilizar (dropdown de enum)
+- Matrícula
+- Senha do sistema (a mesma da principal)
+
+O sistema só precisa digitar o login a primeira vez em homologação, na segunda vez é possível logar utilizando a hotkey.
+
+O menu de configurações também permite alterar hotkeys para os fluxos de login disponíveis. 
+
+O menu de configurações tem a opção de excluir a conta e conta também com um botão para deslogar o usuário.
+
+No modo *Online*, exclui os dados no firebase e desloga do usuário, limpando o singleton com os dados do usuário. No modo *Offline*, os dados locais do computador são apagados e se retorna para a tela de login.
+
+# Offline Mode
+
+Se trata de uma implementação da interface do repositório do usuário que permite que os dados sejam lidos e gravados em um arquivo local. O modo offline é acessado por um botão na tela de login que acessa o programa sem a necessidade de fornecer um usuário e senha.
 
 ## **Tecnologias Utilizadas**
 
 - **C# (.NET)**: Linguagem principal para desenvolvimento da aplicação.
 - **Windows Forms**: Framework utilizado para criar a interface gráfica do usuário.
 - **Otp.NET**: Biblioteca para geração de códigos OTP (TOTP/HOTP).
-- **API REST (Opcional)**: Para armazenamento remoto de configurações.
+- **MaterialSkin**: Para design da interface visual.
+- **Microsoft Dependency Injection**: Para injeção de dependência.
+- **Firebase:** Para armazenamento dos dados.
 
-## **Como Funciona**
-
-1. **Configuração Inicial**:
-   - O usuário define seu login, senha e chave secreta do Autenticador Google (se aplicável) na interface do programa.
-   - O usuário escolhe atalhos (Hotkeys) para executar cada fluxo de login.
-
-2. **Execução do Login**:
-   - O programa escuta os atalhos configurados.
-   - Ao ativar uma hotkey, o programa executa o fluxo de login associado:
-     1. Digita o login e a senha automaticamente.
-     2. Gera o código OTP baseado na chave secreta fornecida.
-     3. Preenche os campos e finaliza o login.
-
-3. **Armazenamento Seguro**:
+   **Armazenamento Seguro**:
    - As configurações, incluindo a chave secreta, são enviadas e armazenadas remotamente para maior segurança.
 
-4. **Execução em Segundo Plano**:
+   **Execução em Segundo Plano**:
    - O programa minimiza para a bandeja do sistema e continua escutando os atalhos definidos.
-
-## **Como Usar**
-
-### **Requisitos**
-
-- Windows 10 ou superior.
-- .NET 6 ou superior instalado.
-
-### **Instalação**
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/taliberado.git
-   ```
-
-2. Abra o projeto no **Visual Studio**.
-
-3. Compile o projeto (pressione `F5` ou clique em **Build > Build Solution**).
-
-4. Execute o aplicativo gerado na pasta `bin/Debug`.
-
-### **Configuração**
-
-1. Abra o programa.
-2. Configure os seguintes campos:
-   - **Login e senha**: Informações necessárias para o login no sistema.
-   - **Chave secreta**: Código base para geração de OTP (opcional).
-   - **Hotkeys**: Selecione as combinações de teclas que executarão cada fluxo de login.
-3. Salve as configurações.
-
-### **Fluxo de Login**
-
-- Pressione o atalho configurado (Hotkey).
-- O programa automaticamente preenche os campos e finaliza o login.
-
-## **Armazenamento Remoto**
-
-As configurações sensíveis (como a chave secreta) podem ser armazenadas remotamente:
-
-1. Configure um servidor para receber e armazenar os dados via API REST.
-2. Configure a URL do servidor no programa para sincronizar as configurações.
-
-Exemplo de API esperada:
-```json
-POST /api/save
-{
-  "login": "seu-login",
-  "senha": "sua-senha",
-  "secret": "sua-chave-secreta"
-}
-```
-
-## **Personalização**
-
-- Adicione novos fluxos de login para sistemas diferentes.
-- Configure novos atalhos para ações específicas.
-
-## **Segurança**
-
-- As senhas e segredos são transmitidos via conexão segura (HTTPS).
-- Utilize métodos de autenticação na API para proteger os dados.
-
-## **Contribuição**
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
 ## **Licença**
 
