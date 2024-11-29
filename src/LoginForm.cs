@@ -16,15 +16,18 @@ namespace ta_liberado
     public partial class LoginForm : MaterialForm
     {
         private readonly AuthService _authService;
+        private readonly IUserRepository _userRepository;
 
-        public LoginForm(AuthService authService)
+        public LoginForm(AuthService authService, IUserRepository userRepository)
         {
             _authService = authService;
+            _userRepository = userRepository;
 
             InitializeComponent();
             Bindings();
 
             labelVersao.Text = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            _userRepository = userRepository;
         }
 
         void Bindings()
