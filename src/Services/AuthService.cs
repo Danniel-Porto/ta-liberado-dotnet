@@ -8,23 +8,28 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ta_liberado
 {
-    internal class AuthService
+    public class AuthService
     {
-        static UserRepository userRepository = new UserRepository(); // Realizar injecao de dependencia
+        private readonly IUserRepository _userRepository; // Realizar injecao de dependencia
+
+        // O DI vai injetar automaticamente o UserRepository, com o FirestoreDb já configurado
+        public AuthService(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
 
         // Implementar criptografia de uma via: só criptografa, nunca descriptografa.
         // Permitir usuario a utilizar o modo local, onde os dados ficam salvos no computador dele.
         // Os dados ficam salvos criptografados e a secret para decriptografar ficaria dentro do código fonte.
 
-        // Remover STATIC
-        public static bool Authenticate(string username, string password, out User user, out string message)
+        public bool Authenticate(string username, string password, out User user, out string message)
         {
             message = "";
             user = null;
 
             try
             {
-                user = userRepository.GetUserByName(username);
+                user = _userRepository.GetUserByName(username);
                 if (user == null)
                 {
                     message = "Usuário ou senha inválido(s).";
@@ -49,9 +54,9 @@ namespace ta_liberado
         }
 
         // Alternativa
-        public static User AuthenticateCatch(string username, string password)
+        public User AuthenticateCatch(string username, string password)
         {
-            User user = userRepository.GetUserByName(username);
+            User user = _userRepository.GetUserByName(username);
             if (user == null || user.Password != password) 
             {
                 throw new Exception("Usuário ou senha inválido(s).");

@@ -15,9 +15,12 @@ namespace ta_liberado
 {
     public partial class LoginForm : MaterialForm
     {
+        private readonly AuthService _authService;
 
-        public LoginForm()
+        public LoginForm(AuthService authService)
         {
+            _authService = authService;
+
             InitializeComponent();
             Bindings();
 
@@ -35,7 +38,7 @@ namespace ta_liberado
 
         public void OnLoginButtonClick(object sender, EventArgs e, string username, string password)
         {
-            if (AuthService.Authenticate(username, password, out User user, out string message))
+            if (_authService.Authenticate(username, password, out User user, out string message))
             {
                 LoginAlert("Autenticado!", true);
             }
@@ -48,7 +51,7 @@ namespace ta_liberado
             // Bem mais pratico, mas o try não me parece adequado.
             try
             {
-                AuthService.AuthenticateCatch(username, password);
+                _authService.AuthenticateCatch(username, password);
             }
             catch (Exception ex)
             {

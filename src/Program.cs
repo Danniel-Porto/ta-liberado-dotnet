@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,9 +16,16 @@ namespace ta_liberado
         [STAThread]
         static void Main()
         {
+            // Configurar o DI
+            var serviceProvider = ServiceConfigurator.ConfigureServices();
+
+            // Forms
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+
+            // Aqui, o DI vai resolver o LoginForm e injetar as dependências
+            var loginForm = serviceProvider.GetService<LoginForm>();
+            Application.Run(loginForm);
         }
     }
 }

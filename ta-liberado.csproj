@@ -149,7 +149,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\Repository\FirestoreDb.cs" />
     <Compile Include="src\Repository\IUserRepository.cs" />
     <Compile Include="src\Services\AuthService.cs" />
     <Compile Include="src\LoginForm.cs">
