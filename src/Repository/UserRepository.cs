@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ta_liberado
 {
-    internal class UserRepository
+    internal class UserRepository : IUserRepository
     {
+
         public User GetUserByName(string username)
         {
             return null;
@@ -16,6 +17,11 @@ namespace ta_liberado
         public void SaveUser(User user)
         {
 
+        }
+
+        public void DeleteUser(User user) 
+        {
+        
         }
     }
 }
