@@ -31,7 +31,7 @@ namespace ta_liberado
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            //_userRepository.AddUser(new User("_", "_"));
+            
         }
 
         void Bindings()
@@ -80,6 +80,16 @@ namespace ta_liberado
         private void label1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBoxSenha_TextChanged(object sender, EventArgs e)
+        {
+            textBoxSenha.PasswordChar = '*';
+        }
+
+        private void checkBoxMostrarSenha_checkedChanged(object sender, EventArgs e)
+        {
+            textBoxSenha.PasswordChar = checkBoxMostrarSenha_checkedChanged ? '\0' : '*';
         }
     }
 }
