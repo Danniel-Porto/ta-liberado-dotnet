@@ -11,19 +11,16 @@ namespace ta_liberado
     [FirestoreData]
     public class User
     {
-        [FirestoreProperty(nameof(Id))]
-        public string Id { get; set; }
-        [FirestoreProperty(nameof(Name))]
-        public string Name { get; set; }
+        [FirestoreProperty(nameof(Username))]
+        public string Username { get; set; }
         [FirestoreProperty(nameof(Password))]
         public string Password { get; set; }
 
         public User() { }
 
-        public User(string id, string name, string password)
+        public User(string username, string password)
         {
-            Id = id;
-            Name = name;
+            Username = username;
             Password = password;
         }
     }

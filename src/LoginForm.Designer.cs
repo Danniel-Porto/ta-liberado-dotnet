@@ -79,7 +79,7 @@
             this.labelTitle.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(83, 86);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(267, 29);
+            this.labelTitle.Size = new System.Drawing.Size(264, 29);
             this.labelTitle.TabIndex = 3;
             this.labelTitle.Text = "TA LIBERADO 2 👍";
             // 

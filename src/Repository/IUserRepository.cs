@@ -12,8 +12,6 @@ public interface IUserRepository
 
     User GetUserByName(string username);
 
-    User GetUserById(string username);
-
     void UpdateUser(User user);
 
     void DeleteUser(User user);

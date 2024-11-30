@@ -1,42 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\",
+  "WorkspaceRootPath": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|c:\\users\\igor3\\desktop\\ta liberado\\ta-liberado-dotnet\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\services\\serviceconfigurator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\services\\serviceconfigurator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|c:\\users\\danniel\\wkspaces\\ta-liberado-dotnet\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|c:\\users\\igor3\\desktop\\ta liberado\\ta-liberado-dotnet\\src\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35316A6E-CAB9-437C-8ED7-6C8461C26A8E}|ta-liberado.csproj|solutionrelative:src\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,135 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Program.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Program.cs",
-              "RelativeToolTip": "src\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "src\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:33:22.909Z",
+              "WhenOpened": "2024-11-30T15:51:20.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-29T22:12:44.582Z",
-              "EditorCaption": ""
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\LoginForm.cs",
+              "RelativeDocumentMoniker": "src\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\LoginForm.cs [Design]",
+              "RelativeToolTip": "src\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T23:54:04.452Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Model\\User.cs",
-              "RelativeDocumentMoniker": "src\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Model\\User.cs",
-              "RelativeToolTip": "src\\Model\\User.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBAAAAAoAAAAAAAAAA==",
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\LoginForm.cs",
+              "RelativeDocumentMoniker": "src\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\LoginForm.cs",
+              "RelativeToolTip": "src\\LoginForm.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAASwEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:52:45.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "src\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Services\\AuthService.cs",
-              "RelativeToolTip": "src\\Services\\AuthService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:49:34.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ServiceConfigurator.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Services\\ServiceConfigurator.cs",
-              "RelativeDocumentMoniker": "src\\Services\\ServiceConfigurator.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Services\\ServiceConfigurator.cs",
-              "RelativeToolTip": "src\\Services\\ServiceConfigurator.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T21:48:20.202Z",
+              "WhenOpened": "2024-11-29T22:23:38.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "src\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "src\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Model\\User.cs",
+              "RelativeDocumentMoniker": "src\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Model\\User.cs",
+              "RelativeToolTip": "src\\Model\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T20:17:35.166Z",
+              "WhenOpened": "2024-11-29T21:20:15.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\Services\\AuthService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T23:00:22.298Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\LoginForm.cs",
-              "RelativeDocumentMoniker": "src\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\LoginForm.cs",
-              "RelativeToolTip": "src\\LoginForm.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\igor3\\Desktop\\Ta Liberado\\ta-liberado-dotnet\\src\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "src\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T00:00:57.57Z",
+              "WhenOpened": "2024-11-29T22:53:32.458Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "src\\LoginForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\LoginForm.Designer.cs",
-              "RelativeToolTip": "src\\LoginForm.Designer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T00:48:30.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\LoginForm.cs",
-              "RelativeDocumentMoniker": "src\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Danniel\\wkspaces\\ta-liberado-dotnet\\src\\LoginForm.cs [Design]",
-              "RelativeToolTip": "src\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:54:04.452Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

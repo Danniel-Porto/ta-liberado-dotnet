@@ -27,48 +27,50 @@ namespace ta_liberado
             Bindings();
 
             labelVersao.Text = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            _userRepository = userRepository;
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            //_userRepository.AddUser(new User("_", "_"));
         }
 
         void Bindings()
         {
             buttonEntrar.Click += (sender, e) =>
-            OnLoginButtonClick(sender, e, textBoxUsuario.Text, textBoxSenha.Text);
+            OnButtonClickLogin(sender, e, textBoxUsuario.Text, textBoxSenha.Text);
 
             buttonNovoUsuario.Click += (sender, e) =>
-            OnButtonNovoUsuarioClick(sender, e, textBoxUsuario.Text, textBoxSenha.Text);
+            OnButtonClickNewUser(sender, e, textBoxUsuario.Text, textBoxSenha.Text);
         }
 
-        public void OnLoginButtonClick(object sender, EventArgs e, string username, string password)
+        public void OnButtonClickLogin(object sender, EventArgs e, string username, string password)
         {
             if (_authService.Authenticate(username, password, out User user, out string message))
             {
-                LoginAlert("Autenticado!", true);
+                Alert("Autenticado!", true);
             }
             else
             {
-                LoginAlert(message, false);
-            }
-
-            // Solucao alternativa
-            // Bem mais pratico, mas o try não me parece adequado.
-            try
-            {
-                _authService.AuthenticateCatch(username, password);
-            }
-            catch (Exception ex)
-            {
-                LoginAlert(ex.Message, false);
+                Alert(message, false);
             }
         }
 
-        public void OnButtonNovoUsuarioClick(object sender, EventArgs e, string username, string password)
+        public void OnButtonClickNewUser(object sender, EventArgs e, string username, string password)
         {
-            //MessageBox.Show(this, "Novo Usuário!", "Título", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            LoginAlert("Usuário criado com sucesso!", true);
+            if (!_authService.VerifyUser(username, password, out string message))
+            {
+                User user = new User(username, password);
+
+                _userRepository.AddUser(user);
+                Alert("Novo usuário criado!", true);
+            }
+            else
+            {
+                Alert(message, false);
+            }
         }
 
-        public void LoginAlert(string message, bool success)
+        public void Alert(string message, bool success)
         {
             labelAlertaLogin.Text = message;
             labelAlertaLogin.ForeColor = success ? Color.DarkGreen : Color.Firebrick;
@@ -78,11 +80,6 @@ namespace ta_liberado
         private void label1_Click(object sender, EventArgs e)
         {
             
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ta_liberado
 {
@@ -19,18 +20,30 @@ namespace ta_liberado
 
         public void AddUser(User user)
         {
-            var docRef = _firestoreDb.Collection(CollectionName).Document(user.Id);
+            DocumentReference docRef = _firestoreDb.Collection(CollectionName).Document(user.Username);
             docRef.SetAsync(user).Wait();
         }
 
         public User GetUserByName(string username)
         {
-            return null;
-        }
+            try
+            {
+                DocumentSnapshot docSnapshot = _firestoreDb.Collection(CollectionName).Document(username).GetSnapshotAsync().GetAwaiter().GetResult();
 
-        public User GetUserById(string username)
-        {
-            return null;
+                if (docSnapshot.Exists)
+                {
+                    return docSnapshot.ConvertTo<User>();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
         }
 
         public void UpdateUser(User user)

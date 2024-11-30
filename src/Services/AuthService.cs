@@ -53,6 +53,32 @@ namespace ta_liberado
             }
         }
 
+        public bool VerifyUser(string username, string password, out string message)
+        {
+            message = "";
+
+            try
+            {
+                User user = _userRepository.GetUserByName(username);
+                if (user != null)
+                {
+                    message = "Usuário Já existente!";
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+
+
         // Alternativa
         public User AuthenticateCatch(string username, string password)
         {
