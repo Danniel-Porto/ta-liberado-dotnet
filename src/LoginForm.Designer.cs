@@ -37,11 +37,12 @@
             this.buttonEntrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.buttonNovoUsuario = new MaterialSkin.Controls.MaterialRaisedButton();
             this.labelAlertaLogin = new MaterialSkin.Controls.MaterialLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(137, 143);
+            this.textBoxUsuario.Location = new System.Drawing.Point(80, 250);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(182, 20);
             this.textBoxUsuario.TabIndex = 0;
@@ -49,7 +50,7 @@
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Location = new System.Drawing.Point(85, 146);
+            this.labelUsername.Location = new System.Drawing.Point(28, 253);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(43, 13);
             this.labelUsername.TabIndex = 1;
@@ -58,7 +59,7 @@
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(137, 175);
+            this.textBoxSenha.Location = new System.Drawing.Point(80, 282);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(182, 20);
             this.textBoxSenha.TabIndex = 1;
@@ -67,7 +68,7 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(85, 178);
+            this.labelPassword.Location = new System.Drawing.Point(28, 285);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(38, 13);
             this.labelPassword.TabIndex = 1;
@@ -77,28 +78,31 @@
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(83, 86);
+            this.labelTitle.Font = new System.Drawing.Font("MS Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(114, 98);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(264, 29);
+            this.labelTitle.Size = new System.Drawing.Size(87, 64);
             this.labelTitle.TabIndex = 3;
-            this.labelTitle.Text = "TA LIBERADO 2 👍";
+            this.labelTitle.Text = "👍";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
             // labelVersao
             // 
             this.labelVersao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.labelVersao.AutoSize = true;
-            this.labelVersao.Location = new System.Drawing.Point(391, 263);
+            this.labelVersao.Location = new System.Drawing.Point(259, 464);
             this.labelVersao.Name = "labelVersao";
             this.labelVersao.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelVersao.Size = new System.Drawing.Size(22, 13);
             this.labelVersao.TabIndex = 4;
             this.labelVersao.Text = "3.0";
+            this.labelVersao.Click += new System.EventHandler(this.labelVersao_Click);
             // 
             // buttonEntrar
             // 
             this.buttonEntrar.Depth = 0;
-            this.buttonEntrar.Location = new System.Drawing.Point(120, 218);
+            this.buttonEntrar.Location = new System.Drawing.Point(125, 331);
             this.buttonEntrar.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Primary = true;
@@ -110,7 +114,8 @@
             // buttonNovoUsuario
             // 
             this.buttonNovoUsuario.Depth = 0;
-            this.buttonNovoUsuario.Location = new System.Drawing.Point(211, 218);
+            this.buttonNovoUsuario.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonNovoUsuario.Location = new System.Drawing.Point(108, 371);
             this.buttonNovoUsuario.MouseState = MaterialSkin.MouseState.HOVER;
             this.buttonNovoUsuario.Name = "buttonNovoUsuario";
             this.buttonNovoUsuario.Primary = true;
@@ -125,11 +130,22 @@
             this.labelAlertaLogin.Depth = 0;
             this.labelAlertaLogin.Font = new System.Drawing.Font("Roboto", 11F);
             this.labelAlertaLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelAlertaLogin.Location = new System.Drawing.Point(134, 126);
+            this.labelAlertaLogin.Location = new System.Drawing.Point(77, 233);
             this.labelAlertaLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.labelAlertaLogin.Name = "labelAlertaLogin";
             this.labelAlertaLogin.Size = new System.Drawing.Size(0, 19);
             this.labelAlertaLogin.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(57, 180);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 29);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Tá Liberado!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // LoginForm
             // 
@@ -137,7 +153,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::ta_liberado.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(440, 285);
+            this.ClientSize = new System.Drawing.Size(308, 486);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelAlertaLogin);
             this.Controls.Add(this.buttonNovoUsuario);
             this.Controls.Add(this.buttonEntrar);
@@ -150,6 +167,7 @@
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.Sizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
@@ -168,5 +186,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton buttonEntrar;
         private MaterialSkin.Controls.MaterialRaisedButton buttonNovoUsuario;
         private MaterialSkin.Controls.MaterialLabel labelAlertaLogin;
+        private System.Windows.Forms.Label label1;
     }
 }

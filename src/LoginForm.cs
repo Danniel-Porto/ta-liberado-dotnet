@@ -82,14 +82,19 @@ namespace ta_liberado
             
         }
 
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void textBoxSenha_TextChanged(object sender, EventArgs e)
         {
             textBoxSenha.PasswordChar = '*';
         }
 
-        private void checkBoxMostrarSenha_checkedChanged(object sender, EventArgs e)
+        private void labelVersao_Click(object sender, EventArgs e)
         {
-            textBoxSenha.PasswordChar = checkBoxMostrarSenha_checkedChanged ? '\0' : '*';
+            
         }
     }
 }
